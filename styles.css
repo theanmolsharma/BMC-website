@@ -1,5 +1,26 @@
 @font-face {
+    font-family: "SF Pro Display Heavy";
+    src: url("resources/SF-Pro-Display-Heavy.otf");
+}
 
+@font-face {
+    font-family: "SF Pro Display Semibold";
+    src: url("resources/SF-Pro-Display-Semibold.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Bold";
+    src: url("resources/SF-Pro-Display-Bold.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Medium";
+    src: url("resources/SF-Pro-Display-Medium.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Regular";
+    src: url("resources/SF-Pro-Display-Regular.otf");
 }
 
 html {
@@ -23,3 +44,401 @@ body {
     align-items: center;
     overflow-x: hidden;
 }
+
+main {
+    scroll-snap-type: y mandatory;
+    margin: 0;
+    padding: 0;
+}
+
+/*  ------------------  Full screen nav begins  ------------------  */
+
+#nav-container {
+    position: fixed;
+    top: 9%;
+    right: 6%;
+
+    z-index: 6;
+}
+
+#nav-toggle {
+    display: block;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transform: rotate(0deg);
+}
+
+#nav-toggle span {
+    background-color: black;
+    width: 100%;
+    height: 4px;
+    border-radius: 1px;
+    display: block;
+    position: absolute;
+    left: 0;
+    content: "";
+    transition: 0.5s ease-in-out;
+}
+
+#nav-toggle span:nth-child(1) {
+    top: 4px;
+    transform-origin: left center;
+}
+
+#nav-toggle span:nth-child(2) {
+    top: 14px;
+    transform-origin: left center;
+}
+
+#nav-toggle span:nth-child(3) {
+    top: 24px;
+    transform-origin: left center;
+}
+
+#nav-toggle.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 3px;
+    left: 4px;
+}
+
+#nav-toggle.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+#nav-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 25px;
+    left: 4px;
+}
+
+#nav-overlay {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    transition: 1s;
+    transform: scale3d(0, 0, 0);
+}
+
+#nav-overlay.open {
+    transform: scale3d(1, 1, 1);
+}
+
+#nav-fullscreen {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: ease-in-out 0.25s;
+    transition-delay: 0s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#nav-fullscreen ul {
+    list-style: none;
+}
+
+#nav-fullscreen li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-fullscreen a {
+    font-family: Raleway;
+    color: white;
+    text-decoration: none;
+}
+
+#nav-fullscreen.open {
+    visibility: visible;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+    transition-delay: 0.25s;
+}
+
+#nav-overlay {
+    /*background: linear-gradient(180deg, #FF512F 10%, #FF512F 50%, #DD2476 90%);*/
+    background: linear-gradient(66.47deg, #1C0026 -26.71%, #640685 96.03%);
+}
+
+#nav-toggle span {
+    background-color: white;
+}
+
+#nav-fullscreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 10vh;
+}
+
+#nav-fullscreen ul li a::after {
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    height: 3px;
+    width: 0;
+
+    content: "";
+    background: white;
+    transition: width 0.5s;
+}
+
+#nav-fullscreen ul li a:hover::after {
+    width: 100%;
+}
+
+#nav-fullscreen ul li a{
+    position: relative;
+}
+
+/*  ------------------  Full screen nav ends  ------------------  */
+
+
+/*  ------------------  Landing Section begins  ------------------  */
+
+.contain {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    scroll-snap-align: start;
+}
+
+.col-50-landing {
+    height: 100vh;
+    width: 50vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 5vw;
+
+    overflow: hidden;
+}
+
+.landing {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("IMG/BG-1.5x.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.landing-heading {
+    width: 50vw;
+
+    margin-bottom: 4vh;
+
+    font-family: "SF Pro Display Heavy", sans-serif;
+    font-weight: 800;
+    font-size: 85px;
+    line-height: 101px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.landing-subheading {
+    width: 35vw;
+
+    font-family: "SF Pro Display SemiBold", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+/*  ------------------  Landing Section ends ------------------  */
+
+/*  ------------------  Intro Section begins  ------------------  */
+
+.contain-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(123.9deg, #1C0026 1.16%, #640685 93.13%);
+}
+
+.col-50 {
+    height: 100vh;
+    width: 50vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.intro-heading {
+    width: 45vw;
+
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+
+    font-family: "SF Pro Display SemiBold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.intro-subheading {
+    width: 45vw;
+
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+
+    font-family: "SF Pro Display SemiBold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 54px;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.intro-subheading span {
+    position: relative;
+}
+
+.intro-subheading span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    left: 0rem;
+    height: 50px;
+    z-index: 6;
+    background-image: url("IMG/underline.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.intro-img {
+    height: 85vh;
+    width: 33vw;
+
+    margin-right: 4vw;
+
+    background-image: url("IMG/intro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 6px solid #FFFFFF;
+}
+
+/*  ------------------  Intro Section ends  ------------------  */
+
+/*  ------------------  Why BMC Section begins  ------------------  */
+
+
+.why-bmc {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(66.47deg, #1C0026 -26.71%, #640685 96.03%);
+
+    z-index: 2;
+}
+
+.why-bmc h3 span {
+    position: relative;
+
+    font-family: "SF Pro Display SemiBold", sans-serif;
+    font-size: 70px;
+    line-height: 84px;
+}
+
+.why-bmc h3 span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 85px;
+    left: 0rem;
+    height: 50px;
+    z-index: 6;
+    background-image: url("IMG/underline.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.why-bmc h3 {
+    width: 80vw;
+
+    font-family: "SF Pro Display SemiBold", sans-serif;
+    font-size: 70px;
+    line-height: 84px;
+
+    color: #FFFFFF;
+}
+
+.why-bmc p {
+    width: 80vw;
+
+    margin-bottom: 10vh;
+    margin-top: 4vh;
+
+    font-family: "SF Pro Display Regular", sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+/*  ------------------  Why BMC Section end  ------------------  */
+
+/*  ------------------  Full Screen Image begins  ------------------  */
+
+.full-image {
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("IMG/Snapseed 4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*  ------------------  Full Screen Image end  ------------------  */
+
+/*  ------------------  Test  ------------------  */
+

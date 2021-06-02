@@ -164,7 +164,6 @@ main {
 }
 
 #nav-overlay {
-    /*background: linear-gradient(180deg, #FF512F 10%, #FF512F 50%, #DD2476 90%);*/
     background: linear-gradient(66.47deg, #1C0026 -26.71%, #640685 96.03%);
 }
 
@@ -339,7 +338,7 @@ main {
     top: 55px;
     left: 0rem;
     height: 50px;
-    z-index: 6;
+    z-index: 4;
     background-image: url("IMG/underline.svg");
     background-repeat: no-repeat;
     background-size: contain;

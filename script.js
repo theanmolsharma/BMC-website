@@ -25,3 +25,10 @@ $(document).ready(function() {
 
 //  ------------------  Navigation Bar ends ------------------ //
 
+//  ------------------  Scroll-Out config starts ------------------ //
+
+ScrollOut({
+    targets: 'span'
+})
+
+//  ------------------  Scroll-Out config ends ------------------ //

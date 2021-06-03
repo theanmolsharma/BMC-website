@@ -191,7 +191,7 @@ main {
     width: 0;
 
     content: "";
-    background: white;
+    background: linear-gradient(90deg, #fc5296 0%, #f67062 100%);
     transition: width 0.5s;
 }
 
@@ -342,7 +342,7 @@ main {
     left: 0rem;
     height: 50px;
     z-index: 4;
-    background-image: url("IMG/underline.svg");
+    background-image: url("IMG/underline-1.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -396,7 +396,7 @@ main {
     left: 0rem;
     height: 50px;
     z-index: 6;
-    background-image: url("IMG/underline.svg");
+    background-image: url("IMG/underline-1.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -534,8 +534,8 @@ main {
     top: 45px;
     left: 0rem;
     height: 50px;
-    z-index: 6;
-    background-image: url("IMG/underline.svg");
+    z-index: 5;
+    background-image: url("IMG/underline-1.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -689,6 +689,7 @@ main {
     color: #FFFFFF;
 }
 
+
 /*  ------------------  Meet the team end  ------------------  */
 
 /*  ------------------  Meet the team end  ------------------  */
@@ -719,7 +720,19 @@ main {
 
 /*  ------------------  Meet the team end  ------------------  */
 
-
-
-/*  ------------------  Test  ------------------  */
-
+/*================================================
+Start Underline Animation
+==================================================*/
+.underline--magical {
+    background-image: linear-gradient(90deg, #fc5296 0%, #f67062 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+}
+.underline--magical:hover {
+    background-size: 100% 88%;
+}
+/*================================================
+End Underline Animation
+==================================================*/

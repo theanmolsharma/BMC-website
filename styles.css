@@ -45,6 +45,11 @@ body {
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
 main {
     scroll-snap-type: y mandatory;
     margin: 0;
@@ -880,4 +885,113 @@ Begin Mission / Vision
 
 /*================================================
 End Mission / Vision
+================================================*/
+
+/*================================================
+Begin Event Landing
+================================================*/
+
+.events-container {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(123.9deg, #1C0026 1.16%, #640685 100.3%);
+}
+
+.events-container h1 {
+    font-family: "SF Pro Display Heavy", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 85px;
+    line-height: 101px;
+    display: flex;
+    align-items: center;
+
+    margin: 10vw;
+
+    color: #FFFFFF;
+}
+
+/*================================================
+End Event Landing
+================================================*/
+
+/*================================================
+Begin Events Description
+================================================*/
+
+.events {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(79.65deg, #1C0026 -27.42%, #640685 114.41%);
+}
+
+.event-box {
+    width: 80vw;
+
+    margin: 5vh 0 5vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-box h3 {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 65px;
+}
+
+.event-box h3 span{
+    position: relative;
+
+    font-family: "SF Pro Display Heavy", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 69px;
+
+    color: #FFFFFF;
+}
+
+.event-box h3 span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 62px;
+    left: 0rem;
+    height: 50px;
+    z-index: 4;
+    background-image: url("IMG/underline-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.event-box p {
+    margin: 0 0 30px;
+
+    font-family: "SF Pro Display Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: justify;
+    opacity: 80%;
+
+    color: #FFFFFF;
+}
+
+/*================================================
+End Events Description
 ================================================*/

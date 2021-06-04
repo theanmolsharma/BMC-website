@@ -312,7 +312,7 @@ main {
     color: #FFFFFF;
 }
 
-.intro-subheading {
+.intro-subheading  {
     width: 45vw;
 
     margin-left: 5vw;
@@ -722,7 +722,7 @@ main {
 
 /*================================================
 Start Underline Animation
-==================================================*/
+================================================*/
 .underline--magical {
     background-image: linear-gradient(90deg, #fc5296 0%, #f67062 100%);
     background-repeat: no-repeat;
@@ -735,4 +735,149 @@ Start Underline Animation
 }
 /*================================================
 End Underline Animation
-==================================================*/
+================================================*/
+
+/*================================================
+Begin Who are We
+================================================*/
+.who-are-we-container {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(123.9deg, #1C0026 1.16%, #640685 93.13%);
+}
+
+.who-are-we {
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.who-are-we h3 {
+    font-family: "SF Pro Display Heavy", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 84px;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.who-are-we h3 span {
+    position: relative;
+}
+
+.who-are-we h3 span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 75px;
+    left: 0rem;
+    height: 50px;
+    z-index: 4;
+    background-image: url("IMG/underline-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.who-are-we p {
+    width: 83.5vw;
+    height: 47vh;
+
+    font-family: "SF Pro Display Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: justify;
+    opacity: 80%;
+
+    color: #FFFFFF;
+}
+/*================================================
+End Who are We
+================================================*/
+
+/*================================================
+Begin Mission / Vision
+================================================*/
+
+.mission-vision-container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background: linear-gradient(66.47deg, #1C0026 -26.71%, #640685 96.03%);
+}
+
+.mission-vision {
+    width: 80vw;
+    height: 45vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mission-vision h3 {
+    font-family: "SF Pro Display Heavy", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 84px;
+
+    margin-bottom: 6vh;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.mission-vision h3 span {
+    position: relative;
+}
+
+.mission-vision h3 span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 75px;
+    left: 0rem;
+    height: 50px;
+    z-index: 4;
+    background-image: url("IMG/underline-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.mission-vision p {
+    font-family: "SF Pro Display Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: justify;
+    opacity: 80%;
+
+    color: #FFFFFF;
+}
+
+
+/*================================================
+End Mission / Vision
+================================================*/

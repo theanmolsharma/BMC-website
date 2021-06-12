@@ -995,3 +995,111 @@ Begin Events Description
 /*================================================
 End Events Description
 ================================================*/
+
+
+/*================================================
+Begin Teams Cards
+================================================*/
+
+.teams {
+    width: 100vw;
+
+    padding: 50px 0 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(79.65deg, #1C0026 -27.42%, #640685 114.41%);
+}
+
+.full-width {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 285px;
+    height: 250px;
+
+    margin: 25px 50px 25px;
+
+    text-align: center;
+}
+
+.card-blue {
+    background-image: url("IMG/Card-1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-red {
+    background-image: url("IMG/Card-2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card h5 {
+    position: relative;
+    top: 25px;
+
+    margin: 0 auto;
+
+    font-family: "SF Pro Display SemiBold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #FFFFFF;
+}
+
+.card p {
+    position: relative;
+    width: 100%;
+    top: 40px;
+
+    margin: 0 auto;
+
+    font-family: "SF Pro Display Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.card-icon {
+    position: relative;
+    width: 100%;
+    top: 120px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-icon a {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+/*================================================
+End Teams Cards
+================================================*/

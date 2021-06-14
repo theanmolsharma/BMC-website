@@ -56,6 +56,45 @@ main {
     padding: 0;
 }
 
+.logo-container {
+    position: absolute;
+    top: 9%;
+    left: 4vw;
+
+    display: flex;
+    flex-direction: row;
+
+
+    z-index: 5;
+}
+
+
+.logo-container a {
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-container img {
+    height: 50px;
+    margin: 0 10px 0;
+}
+
+.logo-container p {
+    font-family: "SF Pro Display Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+
+    opacity: 80%;
+
+    color: #FFFFFF;
+}
+
 /*  ------------------  Full screen nav begins  ------------------  */
 
 #nav-container {

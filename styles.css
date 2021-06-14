@@ -957,8 +957,8 @@ Begin Event Landing
 }
 
 .img-container {
-    height: 73vh;
-    width: 48vw;
+    height: 65vh;
+    width: 43vw;
 
     padding: 0;
 
@@ -966,8 +966,8 @@ Begin Event Landing
 }
 
 .img-container img {
-    height: 73vh;
-    width: 48vw;
+    height: 65vh;
+    width: 43vw;
 
     object-fit: fill;
 }

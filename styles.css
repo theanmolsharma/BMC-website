@@ -956,6 +956,22 @@ Begin Event Landing
     color: #FFFFFF;
 }
 
+.img-container {
+    height: 73vh;
+    width: 48vw;
+
+    padding: 0;
+
+    margin: 5vw;
+}
+
+.img-container img {
+    height: 73vh;
+    width: 48vw;
+
+    object-fit: fill;
+}
+
 /*================================================
 End Event Landing
 ================================================*/

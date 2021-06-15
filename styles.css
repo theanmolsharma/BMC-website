@@ -77,16 +77,17 @@ main {
 }
 
 .logo-container img {
-    height: 50px;
+    height: min(50px, 7vw);
     margin: 0 10px 0;
 }
 
 .logo-container p {
+    width: 70vw;
     font-family: "SF Pro Display Regular", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 23px;
-    line-height: 27px;
+    font-size: clamp(14px, 2vw ,23px);
+    line-height: clamp(16px, 3vw ,27px);
     display: flex;
     align-items: center;
 
@@ -107,8 +108,8 @@ main {
 
 #nav-toggle {
     display: block;
-    width: 32px;
-    height: 32px;
+    width: min(6vw,32px);
+    height: min(6vw,32px);
     cursor: pointer;
     transform: rotate(0deg);
 }
@@ -198,6 +199,7 @@ main {
     font-family: "SF Pro Display Regular", sans-serif;
 
     margin: 20px 0 20px;
+    text-align: center;
 
     color: white;
     text-decoration: none;
@@ -224,7 +226,7 @@ main {
     justify-content: center;
     color: white;
     font-family: sans-serif;
-    font-size: 10vh;
+    font-size: clamp(45px, 8vw, 90px);
 }
 
 #nav-fullscreen ul li a::after {
@@ -265,7 +267,7 @@ main {
 
 .col-50-landing {
     height: 100vh;
-    width: 50vw;
+    width: max(50vw, 310px);
 
     display: flex;
     flex-direction: column;
@@ -287,14 +289,14 @@ main {
 }
 
 .landing-heading {
-    width: 50vw;
+    width: max(50vw, 310px);
 
     margin-bottom: 4vh;
 
     font-family: "SF Pro Display Heavy", sans-serif;
     font-weight: 800;
-    font-size: 85px;
-    line-height: 101px;
+    font-size: clamp(35px, 7vw ,85px);
+    line-height: clamp(40px, 9vw ,100px);
     display: flex;
     align-items: center;
 
@@ -302,12 +304,12 @@ main {
 }
 
 .landing-subheading {
-    width: 35vw;
+    width: max(35vw, 260px);
 
     font-family: "SF Pro Display SemiBold", sans-serif;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: clamp(22px, 5vw, 40px);
+    line-height: clamp(27px, 7vw ,48px);
     display: flex;
     align-items: center;
 
@@ -348,8 +350,8 @@ main {
     font-family: "SF Pro Display SemiBold", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 45px;
-    line-height: 54px;
+    font-size: clamp(35px, 7vw, 45px);
+    line-height: clamp(42px, 9vw, 54px);
     display: flex;
     align-items: center;
 
@@ -365,8 +367,8 @@ main {
     font-family: "SF Pro Display SemiBold", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 45px;
-    line-height: 54px;
+    font-size: clamp(30px, 7vw, 45px);
+    line-height: clamp(35px, 9vw, 54px);
 
     display: flex;
     align-items: center;
@@ -382,7 +384,7 @@ main {
     content: "";
     position: absolute;
     width: 100%;
-    top: 55px;
+    top: clamp(37px, 9vw, 54px);
     left: 0rem;
     height: 50px;
     z-index: 4;
@@ -428,15 +430,15 @@ main {
     position: relative;
 
     font-family: "SF Pro Display SemiBold", sans-serif;
-    font-size: 70px;
-    line-height: 84px;
+    font-size: clamp(35px, 7vw, 70px);
+    line-height: clamp(41px, 9vw, 84px);
 }
 
 .why-bmc h3 span::after {
     content: "";
     position: absolute;
     width: 100%;
-    top: 85px;
+    top: clamp(42px, 9.3vw, 85px);;
     left: 0rem;
     height: 50px;
     z-index: 6;
@@ -449,8 +451,8 @@ main {
     width: 80vw;
 
     font-family: "SF Pro Display SemiBold", sans-serif;
-    font-size: 70px;
-    line-height: 84px;
+    font-size: clamp(35px, 7vw, 70px);
+    line-height: clamp(41px, 9vw, 84px);
 
     color: #FFFFFF;
 }
@@ -462,8 +464,8 @@ main {
     margin-top: 4vh;
 
     font-family: "SF Pro Display Regular", sans-serif;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: clamp(22px, 5vw, 40px);
+    line-height: clamp(27px, 7vw ,48px);
     opacity: 85%;
     display: flex;
     align-items: center;
@@ -523,8 +525,8 @@ main {
     font-family: "SF Pro Display Heavy", sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 52px;
-    line-height: 62px;
+    font-size: clamp(35px, 7vw, 52px);
+    line-height: clamp(41px, 9vw, 62px);
     display: flex;
     align-items: center;
 
@@ -565,17 +567,18 @@ main {
 
     font-family: "SF Pro Display Bold", sans-serif;
     font-style: normal;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: clamp(30px, 7vw, 40px);
+    line-height: clamp(35px, 9vw, 48px);
 
     color: #FFFFFF;
+    z-index: 5;
 }
 
 .event-item-heading span::after {
     content: "";
     position: absolute;
     width: 100%;
-    top: 45px;
+    top: clamp(35px, 9vw, 45px);
     left: 0rem;
     height: 50px;
     z-index: 5;
@@ -589,8 +592,8 @@ main {
 
     font-family: "SF Pro Display Medium", sans-serif;
     font-style: normal;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: clamp(26px, 5vw, 30px);
+    line-height: clamp(30px, 7vw, 36px);
     opacity: 85%;
 
     color: #FFFFFF;
@@ -610,8 +613,8 @@ main {
 
     font-family: "SF Pro Display Medium", sans-serif;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: clamp(26px, 5vw, 30px);
+    line-height: clamp(30px, 7vw, 36px);
 
     z-index: 4;
 
@@ -680,8 +683,8 @@ main {
 .meet-container h3 {
     font-family: "SF Pro Display Heavy", sans-serif;
     font-style: normal;
-    font-size: 60px;
-    line-height: 72px;
+    font-size: clamp(35px, 7vw, 60px);
+    line-height: clamp(41px, 9vw, 72px);
 
     margin-top: 10vh;
 
@@ -692,18 +695,18 @@ main {
 }
 
 .meet-container a {
+    width: 90%;
     font-family: "SF Pro Display SemiBold", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 45px;
-    line-height: 54px;
+    font-size: clamp(28px, 5vw, 45px);
+    line-height: clamp(35px, 7vw, 54px);
     text-decoration: none;
     z-index: 5;
 
-    margin-bottom: 10vh;
+    text-align: center;
 
-    display: flex;
-    align-items: center;
+    margin-bottom: 10vh;
 
     color: #FFFFFF;
 }
@@ -729,7 +732,7 @@ main {
 }
 
 .icon-box a {
-    font-size: 45px;
+    font-size: clamp(35px, 5vw, 45px);
     color: #FFFFFF;
 }
 
@@ -749,10 +752,9 @@ main {
 
 .footer p {
     font-family: "SF Pro Display Regular", sans-serif;
-    font-size: 18px;
-    line-height: 26px;
-    display: flex;
-    align-items: center;
+    font-size: clamp(12px, 4vw, 18px);
+    line-height: clamp(14px, 5vw, 26px);
+    text-align: center;
 
     color: rgba(255, 255, 255, 0.7);
 }
@@ -808,11 +810,8 @@ Begin Who are We
     font-family: "SF Pro Display Heavy", sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 70px;
-    line-height: 84px;
-
-    display: flex;
-    align-items: center;
+    font-size: clamp(45px, 7vw ,70px);
+    line-height: clamp(40px, 9vw ,84px);
 
     color: #FFFFFF;
 }
@@ -825,7 +824,7 @@ Begin Who are We
     content: "";
     position: absolute;
     width: 100%;
-    top: 75px;
+    top: clamp(47px, 7vw ,75px);
     left: 0rem;
     height: 50px;
     z-index: 4;
@@ -841,8 +840,8 @@ Begin Who are We
     font-family: "SF Pro Display Regular", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 38px;
+    font-size: clamp(26px, 5vw, 30px);
+    line-height: clamp(30px, 7vw, 38px);
     text-align: justify;
     opacity: 80%;
 
@@ -881,8 +880,8 @@ Begin Mission / Vision
     font-family: "SF Pro Display Heavy", sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 70px;
-    line-height: 84px;
+    font-size: clamp(45px, 7vw ,70px);
+    line-height: clamp(40px, 9vw ,84px);
 
     margin-bottom: 6vh;
 
@@ -900,7 +899,7 @@ Begin Mission / Vision
     content: "";
     position: absolute;
     width: 100%;
-    top: 75px;
+    top: clamp(47px, 7vw ,75px);
     left: 0rem;
     height: 50px;
     z-index: 4;
@@ -913,8 +912,8 @@ Begin Mission / Vision
     font-family: "SF Pro Display Regular", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 38px;
+    font-size: clamp(26px, 5vw, 30px);
+    line-height: clamp(30px, 7vw, 38px);
     text-align: justify;
     opacity: 80%;
 
@@ -1158,3 +1157,117 @@ Begin Teams Cards
 /*================================================
 End Teams Cards
 ================================================*/
+
+@media only screen and (max-width: 600px){
+    .landing {
+        background-image: url("IMG/BG-long.png");
+    }
+    .col-50-landing {
+        justify-content: flex-start;
+    }
+
+    .landing-heading {
+        margin: 20vh 10px 2vh;
+    }
+    .landing-subheading {
+        margin-left: 10px;
+    }
+    .logo-container p {
+        width: 70vw;
+    }
+    .contain-row {
+        flex-direction: column;
+    }
+    .col-50 {
+        width: 100vw;
+        height: 70vh;
+    }
+    .intro-heading {
+        width: 90vw;
+    }
+    .intro-subheading {
+        width: 90vw;
+    }
+    .intro-img {
+        width: 85vw;
+        height: 70vh;
+
+        background-size: cover;
+        border: none;
+
+        margin-left: 5vw;
+        margin-bottom: 10vh;
+    }
+
+    .why-bmc {
+        height: 75vh;
+    }
+
+    .full-image {
+        background-image: url("IMG/Snapseed-long.jpeg");
+        background-size: contain;
+        background-color: #000;
+    }
+
+    .contain-events {
+        height: 220vh;
+    }
+    .event {
+        height: 210vh;
+        flex-direction: column;
+    }
+    .col-50-events {
+        width: 100vw;
+    }
+    .events-img {
+        height: 60vh;
+        width: 90vw;
+        margin-bottom: 0;
+    }
+    .event-item-heading {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .event-item-heading span::after {
+        height: 27px;
+    }
+    .event-paragraph {
+        width: 90%;
+        margin: 0 0 32px;
+    }
+
+    .event-cta a span {
+        left: 5%;
+    }
+
+    .meet-container a {
+        margin: 30px 0 20px;
+    }
+    .icon-box {
+        width: 60vw;
+    }
+    .footer p {
+        width: 90vw;
+        margin: 10px 0 0;
+    }
+    .who-are-we-container {
+        height: 140vh;
+    }
+    .who-are-we {
+        height: 140vh;
+        justify-content: flex-start;
+    }
+
+    .mission-vision-container {
+        height: 140vh;
+        justify-content: space-evenly;
+    }
+
+    .who-are-we h3 {
+        margin: 60px 0 35px;
+    }
+
+    .mission-vision {
+        height: 90vh;
+    }
+}

@@ -59,7 +59,7 @@ main {
 .logo-container {
     position: absolute;
     top: 4%;
-    left: 4vw;
+    left: 3vw;
 
     display: flex;
     flex-direction: row;
@@ -77,7 +77,7 @@ main {
 }
 
 .logo-container img {
-    height: 95px;
+    height: 125px;
 }
 
 .logo-container p {

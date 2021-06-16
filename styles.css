@@ -945,8 +945,8 @@ Begin Event Landing
     font-family: "SF Pro Display Heavy", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 85px;
-    line-height: 101px;
+    font-size: clamp(35px, 7vw ,85px);
+    line-height: clamp(40px, 9vw ,100px);
     display: flex;
     align-items: center;
 
@@ -1013,8 +1013,8 @@ Begin Events Description
     font-family: "SF Pro Display Heavy", sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 58px;
-    line-height: 69px;
+    font-size: clamp(35px, 7vw ,58px);
+    line-height: clamp(40px, 9vw ,79px);
 
     color: #FFFFFF;
 }
@@ -1023,8 +1023,8 @@ Begin Events Description
     content: "";
     position: absolute;
     width: 100%;
-    top: 62px;
-    left: 0rem;
+    top: clamp(38px, 9vw ,62px);;
+    left: 0;
     height: 50px;
     z-index: 4;
     background-image: url("IMG/underline-1.svg");
@@ -1038,8 +1038,8 @@ Begin Events Description
     font-family: "SF Pro Display Regular", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 34px;
-    line-height: 41px;
+    font-size: clamp(20px, 3vw, 34px);
+    line-height: clamp(22px, 4vw, 41px);
     text-align: justify;
     opacity: 80%;
 
@@ -1269,5 +1269,40 @@ End Teams Cards
 
     .mission-vision {
         height: 50vh;
+    }
+
+    .events-container {
+        height: 110vh;
+
+        flex-direction: column;
+    }
+    .img-container {
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 40px;
+    }
+
+    .img-container img {
+        height: 60vh;
+        width: 95vw;
+    }
+
+    .col-mobile {
+        height: 50vh;
+        justify-content: flex-end;
+    }
+    .event-box {
+        width: 95vw;
+        margin: 20px 0 20px;
+    }
+    .event-box h3 {
+        margin-bottom: 20px;
+    }
+    .event-box p {
+        margin: 10px 0 0;
     }
 }

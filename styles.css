@@ -1305,4 +1305,27 @@ End Teams Cards
     .event-box p {
         margin: 10px 0 0;
     }
+    .card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .meet-container h3 {
+        text-align: center;
+    }
+    .why-bmc p {
+        text-align: justify-all;
+    }
+    .who-are-we p {
+        text-align: left;
+    }
+    .mission-vision p {
+        text-align: left;
+    }
+    .event-box {
+        padding-left: 10px;
+    }
+    .event-box p {
+        text-align: left;
+    }
 }

@@ -1,3 +1,10 @@
+var temp = document.querySelector(".loader");
+
+window.addEventListener("load", removeLoader);
+
+function removeLoader() {
+    temp.classList.add("disappear");
+}
 
 //  ------------------  Navigation Bar starts ------------------ //
 
@@ -33,3 +40,10 @@ ScrollOut({
 
 //  ------------------  Scroll-Out config ends ------------------ //
 
+var loader = document.querySelector(".loader");
+
+window.addEventListener("load", removeLoader);
+
+function removeLoader() {
+    loader.classList.add("disappear");
+}

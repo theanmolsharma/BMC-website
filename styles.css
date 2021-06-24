@@ -1,3 +1,20 @@
+
+.loader img {
+    height: 15%;
+}
+
+.disappear {
+    animation: vanish 1s forwards;
+}
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
 @font-face {
     font-family: "SF Pro Display Heavy";
     src: url("resources/SF-Pro-Display-Heavy.otf");
@@ -1335,4 +1352,21 @@ End Teams Cards
     .heading-c {
         margin-left: 30px;
     }
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 7;
 }

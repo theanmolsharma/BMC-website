@@ -1,284 +1,746 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>BMC - Home</title>
-    <script src="resources/jquery-3.6.0.slim.min.js" ></script>
+    <script src="resources/jquery-3.6.0.slim.min.js"></script>
     <script src="resources/scroll-out.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="resources/hover-min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="resources/hover-min.css" />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
 
-<body>
+  <body>
+    <div class="loader">
+      <img src="./IMG/Hourglass.gif" />
+    </div>
 
-<div class="loader">
-    <img src="./IMG/Hourglass.gif" />
-</div>
-
-
-<div class="logo-container" id="logo">
-    <a href="./index.html">
-        <img src="IMG/logo-2.png"  alt="logo"/>
+    <div class="logo-container" id="logo">
+      <a href="./index.html">
+        <img src="IMG/logo-2.png" alt="logo" />
         <p>Business and Management Club | IIITDMJ</p>
-    </a>
-</div>
-<div id="nav-container">
-    <div id="nav-overlay"></div>
-    <nav id="nav-fullscreen">
+      </a>
+    </div>
+    <div id="nav-container">
+      <div id="nav-overlay"></div>
+      <nav id="nav-fullscreen">
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./events.html">BMC Events</a></li>
-            <li><a href="./teams.html">Working Committee</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./events.html">BMC Events</a></li>
+          <li><a href="./teams.html">Working Committee</a></li>
         </ul>
-    </nav>
-    <a id="nav-toggle">
+      </nav>
+      <a id="nav-toggle">
         <span></span>
         <span></span>
         <span></span>
-    </a>
-</div>
+      </a>
+    </div>
 
-<main>
-    <section class="contain-row">
+    <main>
+      <section class="contain-row">
         <div class="landing">
-            <div class="col-50-landing heading-c">
-                <h1 class="landing-heading heading-2">Meet The Hotshots Who Run The Show</h1>
-            </div>
+          <div class="col-50-landing heading-c">
+            <h1 class="landing-heading heading-2">
+              Meet The Hotshots Who Run The Show
+            </h1>
+          </div>
         </div>
-    </section>
-    <section class="contain">
+      </section>
+      <section class="contain">
+        <!-- <div class="teams">
+          <div class="full-width">
+            <div class="card-container">
+              <div class="card card-red">
+                <h5>Rohan Sinha</h5>
+                <p>Coordinator</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/rohan-sinha-171540170"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2018214@iiitdmj.ac.in"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card card-blue">
+                <h5>Utkarsh Jadhav</h5>
+                <p>Co-Coordinator</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/utkarsh-jadhav-b67992198"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2019070@iiitdmj.ac.in"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card card-red">
+                <h5>Dr. Shivdayal Patel</h5>
+                <p>FIC</p>
+                <div class="card-icon">
+                  <a href="#" class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a href="#" class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="full-width">
+            <div class="card-container">
+              <div class="card card-blue">
+                <h5>Anmol Sharma</h5>
+                <p>Design and Development</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/theanmolsharma/"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=anmolsharma0234@gmail.com"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card card-red">
+                <h5>Arindam<br />Upadhyay</h5>
+                <p>Design</p>
+                <div class="card-icon" style="top: 90px">
+                  <a
+                    href="https://www.linkedin.com/in/arindam-upadhyay-a013b61ba"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=arindamupadhyay2002@gmail.com"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="full-width">
+            <div class="card-container">
+              <div class="card card-blue">
+                <h5>Arnab Mondal</h5>
+                <p>Content</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/arnab-mondal-a7b653200"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mondalarnab15@gmail.com "
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card card-red">
+                <h5>Aryan Wadkar</h5>
+                <p>Design</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/aryan-wadkar-784966200"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=wadkararyan01@gmail.com"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card card-blue">
+                <h5>Himadri<br />Maheshwari</h5>
+                <p>Content</p>
+                <div class="card-icon" style="top: 90px">
+                  <a
+                    href="https://www.linkedin.com/in/himadri-maheshwari-0290b6201/"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=himadri.maheshwari7915@gmail.com"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="full-width">
+            <div class="card-container">
+              <div class="card card-red">
+                <h5>Kakde Satyam Sundarrao</h5>
+                <p>Social Media Management</p>
+                <div class="card-icon" style="top: 90px">
+                  <a
+                    href="https://www.linkedin.com/in/satyam-s-kakde-a34189201"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=stmkakde@gmail.com"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card card-blue">
+                <h5>Manya Agrawal</h5>
+                <p>Content</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/manya-agrawal-b08012201"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manya240603@gmail.com"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card card-red">
+                <h5>Mohd Faiz Khan<br />Khilji</h5>
+                <p>Social Media Management</p>
+                <div class="card-icon" style="top: 90px">
+                  <a
+                    href="https://www.linkedin.com/in/faiz-khan-khilji-a15b3a200"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=businessenquiryfaiz@gmail.com"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="full-width">
+            <div class="card-container">
+              <div class="card card-blue">
+                <h5>Prabhat Jain</h5>
+                <p>Social Media Management</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/prabhat-jain-307800201"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jainprabhat807@gmail.com"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card card-red">
+                <h5>Pranshu Nayak</h5>
+                <p>Content</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/pranshu-nayak-0999871a1"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=pranshunayak566@gmail.com"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card card-blue">
+                <h5>Priyanka Agarwal</h5>
+                <p>Content</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/priyanka-agarwal-4a5360188/"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=20bec075@iiitdmj.ac.in"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="full-width">
+            <div class="card-container">
+              <div class="card card-red">
+                <h5>Srijan Singh</h5>
+                <p>Design</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/srijan-singh-8a0128201"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=singhsrijan812@gmail.com"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card card-blue">
+                <h5>Urvi Sinhal</h5>
+                <p>Social Media Management</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/urvi-sinhal-4255b5201/"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=20bsm052@iitdmj.ac.in"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card card-red">
+                <h5>Vishal Gujrati</h5>
+                <p>Social Media Management</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/vishal-gujrati-9929711ab"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vishugujrati17@gmail.com "
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="full-width">
+            <div class="card-container">
+              <div class="card card-blue">
+                <h5>Bhushan Patil</h5>
+                <p>Ex Coordinator</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/bhushan-patil-07/"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=bpatil250089@gmail.com"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card card-red">
+                <h5>Kanishk Goyal</h5>
+                <p>Ex Co-Coordinator</p>
+                <div class="card-icon">
+                  <a
+                    href="https://www.linkedin.com/in/kanishk2202"
+                    class="hvr-grow"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2017322@iiitdmj.ac.in"
+                    class="hvr-grow"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
         <div class="teams">
-            <div class="full-width">
-                <div class="card-container">
-                    <div class="card card-red">
-                        <h5>Rohan Sinha</h5>
-                        <p>Coordinator</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/rohan-sinha-171540170" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2018214@iiitdmj.ac.in" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="card card-blue">
-                        <h5>Utkarsh Jadhav</h5>
-                        <p>Co-Coordinator</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/utkarsh-jadhav-b67992198" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2019070@iiitdmj.ac.in" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="card card-red">
-                        <h5>Dr. Shivdayal  Patel</h5>
-                        <p>FIC</p>
-                        <div class="card-icon">
-                            <a href="#" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
+          <div class="full-width">
+            <div class="member-card">
+              <div class="member-card-image">
+                <img src="./IMG/team1.jpg" alt="" />
+              </div>
+              <div class="member-card-info">
+                <div class="member-card-name">
+                  <h2>Rohan Sinha</h2>
+                  <h3>Coordinator</h3>
                 </div>
-            </div>
-
-            <div class="full-width">
-                <div class="card-container">
-                    <div class="card card-blue">
-                        <h5>Anmol Sharma</h5>
-                        <p>Design and Development</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/theanmolsharma/" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=anmolsharma0234@gmail.com" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="card card-red">
-                        <h5>Arindam<br />Upadhyay</h5>
-                        <p>Design</p>
-                        <div class="card-icon" style="top: 90px">
-                            <a href="https://www.linkedin.com/in/arindam-upadhyay-a013b61ba" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=arindamupadhyay2002@gmail.com" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
+                <div class="member-card-links">
+                  <a
+                    href="https://www.linkedin.com/in/rohan-sinha-171540170"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/linkedin.svg" alt=""
+                  /></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2018214@iiitdmj.ac.in"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/message.svg" alt=""
+                  /></a>
                 </div>
+              </div>
             </div>
-
-            <div class="full-width">
-                <div class="card-container">
-                    <div class="card card-blue">
-                        <h5>Arnab Mondal</h5>
-                        <p>Content</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/arnab-mondal-a7b653200" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mondalarnab15@gmail.com " class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="card card-red">
-                        <h5>Aryan Wadkar</h5>
-                        <p>Design</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/aryan-wadkar-784966200" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=wadkararyan01@gmail.com" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="card card-blue">
-                        <h5>Himadri<br />Maheshwari</h5>
-                        <p>Content</p>
-                        <div class="card-icon" style="top: 90px">
-                            <a href="https://www.linkedin.com/in/himadri-maheshwari-0290b6201/" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=himadri.maheshwari7915@gmail.com" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
+            <div class="member-card">
+              <div class="member-card-image">
+                <img src="./IMG/team1.jpg" alt="" />
+              </div>
+              <div class="member-card-info">
+                <div class="member-card-name">
+                  <h2>Rohan Sinha</h2>
+                  <h3>Coordinator</h3>
                 </div>
-            </div>
-
-            <div class="full-width">
-                <div class="card-container">
-                    <div class="card card-red">
-                        <h5>Kakde Satyam Sundarrao</h5>
-                        <p>Social Media Management</p>
-                        <div class="card-icon" style="top: 90px">
-                            <a href="https://www.linkedin.com/in/satyam-s-kakde-a34189201" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=stmkakde@gmail.com" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="card card-blue">
-                        <h5>Manya Agrawal</h5>
-                        <p>Content</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/manya-agrawal-b08012201" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manya240603@gmail.com" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="card card-red">
-                        <h5>Mohd Faiz Khan<br />Khilji</h5>
-                        <p>Social Media Management</p>
-                        <div class="card-icon" style="top: 90px">
-                            <a href="https://www.linkedin.com/in/faiz-khan-khilji-a15b3a200" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=businessenquiryfaiz@gmail.com" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
+                <div class="member-card-links">
+                  <a
+                    href="https://www.linkedin.com/in/rohan-sinha-171540170"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/linkedin.svg" alt=""
+                  /></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2018214@iiitdmj.ac.in"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/message.svg" alt=""
+                  /></a>
                 </div>
+              </div>
             </div>
-
-            <div class="full-width">
-                <div class="card-container">
-                    <div class="card card-blue">
-                        <h5>Prabhat Jain</h5>
-                        <p>Social Media Management</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/prabhat-jain-307800201" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jainprabhat807@gmail.com" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="card card-red">
-                        <h5>Pranshu Nayak</h5>
-                        <p>Content</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/pranshu-nayak-0999871a1" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=pranshunayak566@gmail.com" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="card card-blue">
-                        <h5>Priyanka Agarwal</h5>
-                        <p>Content</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/priyanka-agarwal-4a5360188/" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=20bec075@iiitdmj.ac.in" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
+            <div class="member-card">
+              <div class="member-card-image">
+                <img src="./IMG/team1.jpg" alt="" />
+              </div>
+              <div class="member-card-info">
+                <div class="member-card-name">
+                  <h2>Rohan Sinha</h2>
+                  <h3>Coordinator</h3>
                 </div>
-            </div>
-
-            <div class="full-width">
-                <div class="card-container">
-                    <div class="card card-red">
-                        <h5>Srijan Singh</h5>
-                        <p>Design</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/srijan-singh-8a0128201" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=singhsrijan812@gmail.com" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="card card-blue">
-                        <h5>Urvi Sinhal</h5>
-                        <p>Social Media Management</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/urvi-sinhal-4255b5201/" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=20bsm052@iitdmj.ac.in" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="card card-red">
-                        <h5>Vishal Gujrati</h5>
-                        <p>Social Media Management</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/vishal-gujrati-9929711ab" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vishugujrati17@gmail.com " class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
+                <div class="member-card-links">
+                  <a
+                    href="https://www.linkedin.com/in/rohan-sinha-171540170"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/linkedin.svg" alt=""
+                  /></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2018214@iiitdmj.ac.in"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/message.svg" alt=""
+                  /></a>
                 </div>
+              </div>
             </div>
-
-            <div class="full-width">
-                <div class="card-container">
-                    <div class="card card-blue">
-                        <h5>Bhushan Patil</h5>
-                        <p>Ex Coordinator</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/bhushan-patil-07/" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=bpatil250089@gmail.com" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="card card-red">
-                        <h5>Kanishk Goyal</h5>
-                        <p>Ex Co-Coordinator</p>
-                        <div class="card-icon">
-                            <a href="https://www.linkedin.com/in/kanishk2202" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2017322@iiitdmj.ac.in" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
+            <div class="member-card">
+              <div class="member-card-image">
+                <img src="./IMG/team1.jpg" alt="" />
+              </div>
+              <div class="member-card-info">
+                <div class="member-card-name">
+                  <h2>Rohan Sinha</h2>
+                  <h3>Coordinator</h3>
                 </div>
+                <div class="member-card-links">
+                  <a
+                    href="https://www.linkedin.com/in/rohan-sinha-171540170"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/linkedin.svg" alt=""
+                  /></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2018214@iiitdmj.ac.in"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/message.svg" alt=""
+                  /></a>
+                </div>
+              </div>
             </div>
+            <div class="member-card">
+              <div class="member-card-image">
+                <img src="./IMG/team1.jpg" alt="" />
+              </div>
+              <div class="member-card-info">
+                <div class="member-card-name">
+                  <h2>Rohan Sinha</h2>
+                  <h3>Coordinator</h3>
+                </div>
+                <div class="member-card-links">
+                  <a
+                    href="https://www.linkedin.com/in/rohan-sinha-171540170"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/linkedin.svg" alt=""
+                  /></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2018214@iiitdmj.ac.in"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/message.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card-image">
+                <img src="./IMG/team1.jpg" alt="" />
+              </div>
+              <div class="member-card-info">
+                <div class="member-card-name">
+                  <h2>Rohan Sinha</h2>
+                  <h3>Coordinator</h3>
+                </div>
+                <div class="member-card-links">
+                  <a
+                    href="https://www.linkedin.com/in/rohan-sinha-171540170"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/linkedin.svg" alt=""
+                  /></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2018214@iiitdmj.ac.in"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/message.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card-image">
+                <img src="./IMG/team1.jpg" alt="" />
+              </div>
+              <div class="member-card-info">
+                <div class="member-card-name">
+                  <h2>Rohan Sinha</h2>
+                  <h3>Coordinator</h3>
+                </div>
+                <div class="member-card-links">
+                  <a
+                    href="https://www.linkedin.com/in/rohan-sinha-171540170"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/linkedin.svg" alt=""
+                  /></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2018214@iiitdmj.ac.in"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/message.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card-image">
+                <img src="./IMG/team1.jpg" alt="" />
+              </div>
+              <div class="member-card-info">
+                <div class="member-card-name">
+                  <h2>Rohan Sinha</h2>
+                  <h3>Coordinator</h3>
+                </div>
+                <div class="member-card-links">
+                  <a
+                    href="https://www.linkedin.com/in/rohan-sinha-171540170"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/linkedin.svg" alt=""
+                  /></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2018214@iiitdmj.ac.in"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/message.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card-image">
+                <img src="./IMG/team1.jpg" alt="" />
+              </div>
+              <div class="member-card-info">
+                <div class="member-card-name">
+                  <h2>Rohan Sinha</h2>
+                  <h3>Coordinator</h3>
+                </div>
+                <div class="member-card-links">
+                  <a
+                    href="https://www.linkedin.com/in/rohan-sinha-171540170"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/linkedin.svg" alt=""
+                  /></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=2018214@iiitdmj.ac.in"
+                    class="hvr-grow"
+                    target="_blank"
+                    ><img src="./IMG/message.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="contain-meet" style="background: linear-gradient(151.93deg, #1C0026 -40.49%, #640685 101.88%);">
+      <section
+        class="contain-meet"
+        style="
+          background: linear-gradient(
+            151.93deg,
+            #1c0026 -40.49%,
+            #640685 101.88%
+          );
+        "
+      >
         <div class="meet-container">
-            <h3>Explore all BMC Events.</h3>
-            <a href="./events.html"><span class="underline--magical">&nbsp;A place where your ideas can take off!&nbsp;</span></a>
+          <h3>Explore all BMC Events.</h3>
+          <a href="./events.html"
+            ><span class="underline--magical"
+              >&nbsp;A place where your ideas can take off!&nbsp;</span
+            ></a
+          >
         </div>
         <div class="icon-container">
-            <div class="icon-box">
-                <a href="https://www.facebook.com/BMCIIITJ" class="hvr-grow"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/bmc.iiitdmj/" class="hvr-grow"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/business-and-management-iiitdm-jabalpur/" class="hvr-grow"><i class="fab fa-linkedin"></i></a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=bmc@iiitdmj.ac.in" class="hvr-grow"><i class="fas fa-envelope"></i></a>
-            </div>
-            <div class="footer">
-                <p>Copyright © 2021 Business and Management Club, IIITDM Jabalpur</p>
-                <p>Designed and Developed by &nbsp;<a href="#">Anmol Sharma</a></p>
-            </div>
+          <div class="icon-box">
+            <a href="https://www.facebook.com/BMCIIITJ" class="hvr-grow"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/bmc.iiitdmj/" class="hvr-grow"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/business-and-management-iiitdm-jabalpur/"
+              class="hvr-grow"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=bmc@iiitdmj.ac.in"
+              class="hvr-grow"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+          <div class="footer">
+            <p>
+              Copyright © 2021 Business and Management Club, IIITDM Jabalpur
+            </p>
+            <p>Designed and Developed by &nbsp;<a href="#">Anmol Sharma</a></p>
+          </div>
         </div>
-    </section>
-</main>
+      </section>
+    </main>
 
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

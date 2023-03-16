@@ -1,336 +1,330 @@
-
 .loader img {
-    height: 15%;
+  height: 15%;
 }
 
 .disappear {
-    animation: vanish 1s forwards;
+  animation: vanish 1s forwards;
 }
 @keyframes vanish {
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-
-
-@font-face {
-    font-family: "SF Pro Display Heavy";
-    src: url("resources/SF-Pro-Display-Heavy.otf");
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 @font-face {
-    font-family: "SF Pro Display Semibold";
-    src: url("resources/SF-Pro-Display-Semibold.otf");
+  font-family: "SF Pro Display Heavy";
+  src: url("resources/SF-Pro-Display-Heavy.otf");
 }
 
 @font-face {
-    font-family: "SF Pro Display Bold";
-    src: url("resources/SF-Pro-Display-Bold.otf");
+  font-family: "SF Pro Display Semibold";
+  src: url("resources/SF-Pro-Display-Semibold.otf");
 }
 
 @font-face {
-    font-family: "SF Pro Display Medium";
-    src: url("resources/SF-Pro-Display-Medium.otf");
+  font-family: "SF Pro Display Bold";
+  src: url("resources/SF-Pro-Display-Bold.otf");
 }
 
 @font-face {
-    font-family: "SF Pro Display Regular";
-    src: url("resources/SF-Pro-Display-Regular.otf");
+  font-family: "SF Pro Display Medium";
+  src: url("resources/SF-Pro-Display-Medium.otf");
+}
+
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("resources/SF-Pro-Display-Regular.otf");
 }
 
 html {
-    width: 100vw;
-    height: 100vh;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
+  width: 0;
+  background: transparent;
 }
 
 main {
-    scroll-snap-type: y mandatory;
-    margin: 0;
-    padding: 0;
+  scroll-snap-type: y mandatory;
+  margin: 0;
+  padding: 0;
 }
 
 .logo-container {
-    position: absolute;
-    top: 9%;
-    left: 4vw;
+  position: absolute;
+  top: 9%;
+  left: 4vw;
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-
-    z-index: 5;
+  z-index: 5;
 }
 
-
 .logo-container a {
-    text-decoration: none;
+  text-decoration: none;
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .logo-container img {
-    height: min(50px, 7vw);
-    margin: 0 10px 0;
+  height: min(50px, 7vw);
+  margin: 0 10px 0;
 }
 
 .logo-container p {
-    width: 70vw;
-    font-family: "SF Pro Display Regular", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: clamp(14px, 2vw ,23px);
-    line-height: clamp(16px, 3vw ,27px);
-    display: flex;
-    align-items: center;
+  width: 70vw;
+  font-family: "SF Pro Display Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(14px, 2vw, 23px);
+  line-height: clamp(16px, 3vw, 27px);
+  display: flex;
+  align-items: center;
 
-    opacity: 80%;
+  opacity: 80%;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*  ------------------  Full screen nav begins  ------------------  */
 
 #nav-container {
-    position: fixed;
-    top: 9%;
-    right: 6%;
+  position: fixed;
+  top: 9%;
+  right: 6%;
 
-    z-index: 6;
+  z-index: 6;
 }
 
 #nav-toggle {
-    display: block;
-    width: min(6vw,32px);
-    height: min(6vw,32px);
-    cursor: pointer;
-    transform: rotate(0deg);
+  display: block;
+  width: min(6vw, 32px);
+  height: min(6vw, 32px);
+  cursor: pointer;
+  transform: rotate(0deg);
 }
 
 #nav-toggle span {
-    background-color: black;
-    width: 100%;
-    height: 4px;
-    border-radius: 1px;
-    display: block;
-    position: absolute;
-    left: 0;
-    content: "";
-    transition: 0.5s ease-in-out;
+  background-color: black;
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  display: block;
+  position: absolute;
+  left: 0;
+  content: "";
+  transition: 0.5s ease-in-out;
 }
 
 #nav-toggle span:nth-child(1) {
-    top: 4px;
-    transform-origin: left center;
+  top: 4px;
+  transform-origin: left center;
 }
 
 #nav-toggle span:nth-child(2) {
-    top: 14px;
-    transform-origin: left center;
+  top: 14px;
+  transform-origin: left center;
 }
 
 #nav-toggle span:nth-child(3) {
-    top: 24px;
-    transform-origin: left center;
+  top: 24px;
+  transform-origin: left center;
 }
 
 #nav-toggle.open span:nth-child(1) {
-    transform: rotate(45deg);
-    top: 3px;
-    left: 4px;
+  transform: rotate(45deg);
+  top: 3px;
+  left: 4px;
 }
 
 #nav-toggle.open span:nth-child(2) {
-    width: 0%;
-    opacity: 0;
+  width: 0%;
+  opacity: 0;
 }
 
 #nav-toggle.open span:nth-child(3) {
-    transform: rotate(-45deg);
-    top: 25px;
-    left: 4px;
+  transform: rotate(-45deg);
+  top: 25px;
+  left: 4px;
 }
 
 #nav-overlay {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    z-index: -1;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 50%;
-    transition: 1s;
-    transform: scale3d(0, 0, 0);
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  transition: 1s;
+  transform: scale3d(0, 0, 0);
 }
 
 #nav-overlay.open {
-    transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
 }
 
 #nav-fullscreen {
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    transition: ease-in-out 0.25s;
-    transition-delay: 0s;
-    visibility: hidden;
-    opacity: 0;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: ease-in-out 0.25s;
+  transition-delay: 0s;
+  visibility: hidden;
+  opacity: 0;
 }
 
 #nav-fullscreen ul {
-    list-style: none;
+  list-style: none;
 }
 
 #nav-fullscreen li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 #nav-fullscreen a {
-    font-family: "SF Pro Display Regular", sans-serif;
+  font-family: "SF Pro Display Regular", sans-serif;
 
-    margin: 20px 0 20px;
-    text-align: center;
+  margin: 20px 0 20px;
+  text-align: center;
 
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 #nav-fullscreen.open {
-    visibility: visible;
-    opacity: 1;
-    transition: ease-in-out 0.5s;
-    transition-delay: 0.25s;
+  visibility: visible;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+  transition-delay: 0.25s;
 }
 
 #nav-overlay {
-    background: linear-gradient(66.47deg, #1C0026 -26.71%, #640685 96.03%);
+  background: linear-gradient(66.47deg, #1c0026 -26.71%, #640685 96.03%);
 }
 
 #nav-toggle span {
-    background-color: white;
+  background-color: white;
 }
 
 #nav-fullscreen {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: sans-serif;
-    font-size: clamp(45px, 8vw, 90px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: clamp(45px, 8vw, 90px);
 }
 
 #nav-fullscreen ul li a::after {
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    height: 3px;
-    width: 0;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  height: 3px;
+  width: 0;
 
-    content: "";
-    background: linear-gradient(90deg, #fc5296 0%, #f67062 100%);
-    transition: width 0.5s;
+  content: "";
+  background: linear-gradient(90deg, #fc5296 0%, #f67062 100%);
+  transition: width 0.5s;
 }
 
 #nav-fullscreen ul li a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
-#nav-fullscreen ul li a{
-    position: relative;
+#nav-fullscreen ul li a {
+  position: relative;
 }
 
 /*  ------------------  Full screen nav ends  ------------------  */
 
-
 /*  ------------------  Landing Section begins  ------------------  */
 
 .contain {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    scroll-snap-align: start;
+  scroll-snap-align: start;
 }
 
 .col-50-landing {
-    height: 100vh;
-    width: max(50vw, 310px);
+  height: 100vh;
+  width: max(50vw, 310px);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    margin-left: 5vw;
+  margin-left: 5vw;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .landing {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("IMG/BG-1.5x.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("IMG/BG-1.5x.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
 }
 
 .landing-heading {
-    width: max(50vw, 310px);
+  width: max(50vw, 310px);
 
-    margin-bottom: 4vh;
+  margin-bottom: 4vh;
 
-    font-family: "SF Pro Display Heavy", sans-serif;
-    font-weight: 800;
-    font-size: clamp(35px, 7vw ,85px);
-    line-height: clamp(40px, 9vw ,100px);
-    display: flex;
-    align-items: center;
+  font-family: "SF Pro Display Heavy", sans-serif;
+  font-weight: 800;
+  font-size: clamp(35px, 7vw, 85px);
+  line-height: clamp(40px, 9vw, 100px);
+  display: flex;
+  align-items: center;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .landing-subheading {
-    width: max(35vw, 260px);
+  width: max(35vw, 260px);
 
-    font-family: "SF Pro Display SemiBold", sans-serif;
-    font-weight: 600;
-    font-size: clamp(22px, 5vw, 40px);
-    line-height: clamp(27px, 7vw ,48px);
-    display: flex;
-    align-items: center;
+  font-family: "SF Pro Display SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: clamp(22px, 5vw, 40px);
+  line-height: clamp(27px, 7vw, 48px);
+  display: flex;
+  align-items: center;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*  ------------------  Landing Section ends ------------------  */
@@ -338,156 +332,155 @@ main {
 /*  ------------------  Intro Section begins  ------------------  */
 
 .contain-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
-    background: linear-gradient(123.9deg, #1C0026 1.16%, #640685 93.13%);
+  background: linear-gradient(123.9deg, #1c0026 1.16%, #640685 93.13%);
 }
 
 .col-50 {
-    height: 100vh;
-    width: 50vw;
+  height: 100vh;
+  width: 50vw;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .intro-heading {
-    width: 45vw;
+  width: 45vw;
 
-    margin-left: 5vw;
-    margin-bottom: 5vh;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
 
-    font-family: "SF Pro Display SemiBold", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: clamp(35px, 7vw, 45px);
-    line-height: clamp(42px, 9vw, 54px);
-    display: flex;
-    align-items: center;
+  font-family: "SF Pro Display SemiBold", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(35px, 7vw, 45px);
+  line-height: clamp(42px, 9vw, 54px);
+  display: flex;
+  align-items: center;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
-.intro-subheading  {
-    width: 45vw;
+.intro-subheading {
+  width: 45vw;
 
-    margin-left: 5vw;
-    margin-bottom: 5vh;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
 
-    font-family: "SF Pro Display SemiBold", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: clamp(30px, 7vw, 45px);
-    line-height: clamp(35px, 9vw, 54px);
+  font-family: "SF Pro Display SemiBold", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(30px, 7vw, 45px);
+  line-height: clamp(35px, 9vw, 54px);
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .intro-subheading span {
-    position: relative;
+  position: relative;
 }
 
 .intro-subheading span::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: clamp(37px, 9vw, 54px);
-    left: 0rem;
-    height: 50px;
-    z-index: 4;
-    background-image: url("IMG/underline-1.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: clamp(37px, 9vw, 54px);
+  left: 0rem;
+  height: 50px;
+  z-index: 4;
+  background-image: url("IMG/underline-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .intro-img {
-    height: 85vh;
-    width: 33vw;
+  height: 85vh;
+  width: 33vw;
 
-    margin-right: 4vw;
+  margin-right: 4vw;
 
-    background-image: url("IMG/intro.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("IMG/intro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    border: 6px solid #FFFFFF;
+  border: 6px solid #ffffff;
 }
 
 /*  ------------------  Intro Section ends  ------------------  */
 
 /*  ------------------  Why BMC Section begins  ------------------  */
 
-
 .why-bmc {
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    background: linear-gradient(66.47deg, #1C0026 -26.71%, #640685 96.03%);
+  background: linear-gradient(66.47deg, #1c0026 -26.71%, #640685 96.03%);
 
-    z-index: 2;
+  z-index: 2;
 }
 
 .why-bmc h3 span {
-    position: relative;
+  position: relative;
 
-    font-family: "SF Pro Display SemiBold", sans-serif;
-    font-size: clamp(35px, 7vw, 70px);
-    line-height: clamp(41px, 9vw, 84px);
+  font-family: "SF Pro Display SemiBold", sans-serif;
+  font-size: clamp(35px, 7vw, 70px);
+  line-height: clamp(41px, 9vw, 84px);
 }
 
 .why-bmc h3 span::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: clamp(42px, 9.3vw, 85px);;
-    left: 0rem;
-    height: 50px;
-    z-index: 6;
-    background-image: url("IMG/underline-1.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: clamp(42px, 9.3vw, 85px);
+  left: 0rem;
+  height: 50px;
+  z-index: 6;
+  background-image: url("IMG/underline-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .why-bmc h3 {
-    width: 80vw;
+  width: 80vw;
 
-    font-family: "SF Pro Display SemiBold", sans-serif;
-    font-size: clamp(35px, 7vw, 70px);
-    line-height: clamp(41px, 9vw, 84px);
+  font-family: "SF Pro Display SemiBold", sans-serif;
+  font-size: clamp(35px, 7vw, 70px);
+  line-height: clamp(41px, 9vw, 84px);
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .why-bmc p {
-    width: 80vw;
+  width: 80vw;
 
-    margin-bottom: 10vh;
-    margin-top: 4vh;
+  margin-bottom: 10vh;
+  margin-top: 4vh;
 
-    font-family: "SF Pro Display Regular", sans-serif;
-    font-size: clamp(22px, 5vw, 40px);
-    line-height: clamp(27px, 7vw ,48px);
-    opacity: 85%;
-    display: flex;
-    align-items: center;
+  font-family: "SF Pro Display Regular", sans-serif;
+  font-size: clamp(22px, 5vw, 40px);
+  line-height: clamp(27px, 7vw, 48px);
+  opacity: 85%;
+  display: flex;
+  align-items: center;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*  ------------------  Why BMC Section end  ------------------  */
@@ -495,13 +488,13 @@ main {
 /*  ------------------  Full Screen Image begins  ------------------  */
 
 .full-image {
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
 
-    background-image: url("IMG/Snapseed 4.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("IMG/Snapseed 4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*  ------------------  Full Screen Image end  ------------------  */
@@ -509,133 +502,133 @@ main {
 /*  ------------------  Events Section starts  ------------------  */
 
 .contain-events {
-    width: 100vw;
-    height: 130vh;
+  width: 100vw;
+  height: 130vh;
 
-    background: linear-gradient(123.9deg, #1C0026 1.16%, #640685 93.13%);
+  background: linear-gradient(123.9deg, #1c0026 1.16%, #640685 93.13%);
 }
 
 .event {
-    width: 100vw;
-    height: 120vh;
+  width: 100vw;
+  height: 120vh;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .col-50-events {
-    width: 50vw;
+  width: 50vw;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10vh 0 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10vh 0 10vh;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .events-heading {
-    width: 80%;
+  width: 80%;
 
-    font-family: "SF Pro Display Heavy", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: clamp(35px, 7vw, 52px);
-    line-height: clamp(41px, 9vw, 62px);
-    display: flex;
-    align-items: center;
+  font-family: "SF Pro Display Heavy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(35px, 7vw, 52px);
+  line-height: clamp(41px, 9vw, 62px);
+  display: flex;
+  align-items: center;
 
-    margin-left: 10%;
-    margin-top: 50px;
+  margin-left: 10%;
+  margin-top: 50px;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .events-img {
-    height: 80vh;
-    width: 45vw;
+  height: 80vh;
+  width: 45vw;
 
-    margin-bottom: 10vh;
+  margin-bottom: 10vh;
 
-    background-image: url("IMG/Saly-1.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("IMG/Saly-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .event-item {
-    width: 100%;
+  width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .event-item-heading {
-    width: 80%;
+  width: 80%;
 
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .event-item-heading span {
-    position: relative;
+  position: relative;
 
-    font-family: "SF Pro Display Bold", sans-serif;
-    font-style: normal;
-    font-size: clamp(30px, 7vw, 40px);
-    line-height: clamp(35px, 9vw, 48px);
+  font-family: "SF Pro Display Bold", sans-serif;
+  font-style: normal;
+  font-size: clamp(30px, 7vw, 40px);
+  line-height: clamp(35px, 9vw, 48px);
 
-    color: #FFFFFF;
-    z-index: 5;
+  color: #ffffff;
+  z-index: 5;
 }
 
 .event-item-heading span::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: clamp(35px, 9vw, 45px);
-    left: 0rem;
-    height: 50px;
-    z-index: 5;
-    background-image: url("IMG/underline-1.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: clamp(35px, 9vw, 45px);
+  left: 0rem;
+  height: 50px;
+  z-index: 5;
+  background-image: url("IMG/underline-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .event-paragraph {
-    width: 80%;
+  width: 80%;
 
-    font-family: "SF Pro Display Medium", sans-serif;
-    font-style: normal;
-    font-size: clamp(26px, 5vw, 30px);
-    line-height: clamp(30px, 7vw, 36px);
-    opacity: 85%;
+  font-family: "SF Pro Display Medium", sans-serif;
+  font-style: normal;
+  font-size: clamp(26px, 5vw, 30px);
+  line-height: clamp(30px, 7vw, 36px);
+  opacity: 85%;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .event-cta {
-    width: 100%;
+  width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.event-cta a span{
-    position: relative;
+.event-cta a span {
+  position: relative;
 
-    font-family: "SF Pro Display Medium", sans-serif;
-    font-weight: 500;
-    font-size: clamp(26px, 5vw, 30px);
-    line-height: clamp(30px, 7vw, 36px);
+  font-family: "SF Pro Display Medium", sans-serif;
+  font-weight: 500;
+  font-size: clamp(26px, 5vw, 30px);
+  line-height: clamp(30px, 7vw, 36px);
 
-    z-index: 4;
+  z-index: 4;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*.event-cta a span::before {*/
@@ -668,7 +661,7 @@ main {
 /*}*/
 
 .event-cta a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /*  ------------------  Events Section end  ------------------  */
@@ -676,697 +669,775 @@ main {
 /*  ------------------  Meet the team begin  ------------------  */
 
 .contain-meet {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
-    background: linear-gradient(66.47deg, #1C0026 -26.71%, #640685 96.03%);
+  background: linear-gradient(66.47deg, #1c0026 -26.71%, #640685 96.03%);
 }
 
 .meet-container {
-    width: 100vw;
-    height: 40vh;
+  width: 100vw;
+  height: 40vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .meet-container h3 {
-    font-family: "SF Pro Display Heavy", sans-serif;
-    font-style: normal;
-    font-size: clamp(35px, 7vw, 60px);
-    line-height: clamp(41px, 9vw, 72px);
+  font-family: "SF Pro Display Heavy", sans-serif;
+  font-style: normal;
+  font-size: clamp(35px, 7vw, 60px);
+  line-height: clamp(41px, 9vw, 72px);
 
-    margin-top: 10vh;
+  margin-top: 10vh;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .meet-container a {
-    width: 90%;
-    font-family: "SF Pro Display SemiBold", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: clamp(28px, 5vw, 45px);
-    line-height: clamp(35px, 7vw, 54px);
-    text-decoration: none;
-    z-index: 5;
+  width: 90%;
+  font-family: "SF Pro Display SemiBold", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(28px, 5vw, 45px);
+  line-height: clamp(35px, 7vw, 54px);
+  text-decoration: none;
+  z-index: 5;
 
-    text-align: center;
+  text-align: center;
 
-    margin-bottom: 10vh;
+  margin-bottom: 10vh;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .icon-container {
-    width: 100vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon-box {
-    width: 25vw;
+  width: 25vw;
 
-    margin: 5vh;
+  margin: 5vh;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .icon-box a {
-    font-size: clamp(35px, 5vw, 45px);
-    color: #FFFFFF;
+  font-size: clamp(35px, 5vw, 45px);
+  color: #ffffff;
 }
-
 
 /*  ------------------  Meet the team end  ------------------  */
 
 /*  ------------------  Meet the team end  ------------------  */
 
 .footer {
-    width: 100vw;
+  width: 100vw;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer p {
-    font-family: "SF Pro Display Regular", sans-serif;
-    font-size: clamp(12px, 4vw, 18px);
-    line-height: clamp(14px, 5vw, 26px);
-    text-align: center;
+  font-family: "SF Pro Display Regular", sans-serif;
+  font-size: clamp(12px, 4vw, 18px);
+  line-height: clamp(14px, 5vw, 26px);
+  text-align: center;
 
-    color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer p a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /*  ------------------  Meet the team end  ------------------  */
 
 /*================================================
-Start Underline Animation
-================================================*/
+  Start Underline Animation
+  ================================================*/
 .underline--magical {
-    background-image: linear-gradient(90deg, #fc5296 0%, #f67062 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 88%;
-    transition: background-size 0.25s ease-in;
+  background-image: linear-gradient(90deg, #fc5296 0%, #f67062 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
 }
 .underline--magical:hover {
-    background-size: 100% 88%;
+  background-size: 100% 88%;
 }
 /*================================================
-End Underline Animation
-================================================*/
+  End Underline Animation
+  ================================================*/
 
 /*================================================
-Begin Who are We
-================================================*/
+  Begin Who are We
+  ================================================*/
 .who-are-we-container {
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    background: linear-gradient(123.9deg, #1C0026 1.16%, #640685 93.13%);
+  background: linear-gradient(123.9deg, #1c0026 1.16%, #640685 93.13%);
 }
 
 .who-are-we {
-    height: 80vh;
+  height: 80vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .who-are-we h3 {
-    font-family: "SF Pro Display Heavy", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: clamp(45px, 7vw ,70px);
-    line-height: clamp(40px, 9vw ,84px);
+  font-family: "SF Pro Display Heavy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(45px, 7vw, 70px);
+  line-height: clamp(40px, 9vw, 84px);
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .who-are-we h3 span {
-    position: relative;
+  position: relative;
 }
 
 .who-are-we h3 span::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: clamp(47px, 7vw ,75px);
-    left: 0rem;
-    height: 50px;
-    z-index: 4;
-    background-image: url("IMG/underline-1.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: clamp(47px, 7vw, 75px);
+  left: 0rem;
+  height: 50px;
+  z-index: 4;
+  background-image: url("IMG/underline-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .who-are-we p {
-    width: 83.5vw;
-    height: 47vh;
+  width: 83.5vw;
+  height: 47vh;
 
-    font-family: "SF Pro Display Regular", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: clamp(20px, 3vw, 30px);
-    line-height: clamp(22px, 4vw, 38px);
-    text-align: justify;
-    opacity: 80%;
+  font-family: "SF Pro Display Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(20px, 3vw, 30px);
+  line-height: clamp(22px, 4vw, 38px);
+  text-align: justify;
+  opacity: 80%;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 /*================================================
-End Who are We
-================================================*/
+  End Who are We
+  ================================================*/
 
 /*================================================
-Begin Mission / Vision
-================================================*/
+  Begin Mission / Vision
+  ================================================*/
 
 .mission-vision-container {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 
-    background: linear-gradient(66.47deg, #1C0026 -26.71%, #640685 96.03%);
+  background: linear-gradient(66.47deg, #1c0026 -26.71%, #640685 96.03%);
 }
 
 .mission-vision {
-    width: 80vw;
-    height: 45vh;
+  width: 80vw;
+  height: 45vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mission-vision h3 {
-    font-family: "SF Pro Display Heavy", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: clamp(45px, 7vw ,70px);
-    line-height: clamp(40px, 9vw ,84px);
+  font-family: "SF Pro Display Heavy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(45px, 7vw, 70px);
+  line-height: clamp(40px, 9vw, 84px);
 
-    margin-bottom: 6vh;
+  margin-bottom: 6vh;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .mission-vision h3 span {
-    position: relative;
+  position: relative;
 }
 
 .mission-vision h3 span::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: clamp(47px, 7vw ,75px);
-    left: 0rem;
-    height: 50px;
-    z-index: 4;
-    background-image: url("IMG/underline-1.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: clamp(47px, 7vw, 75px);
+  left: 0rem;
+  height: 50px;
+  z-index: 4;
+  background-image: url("IMG/underline-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .mission-vision p {
-    font-family: "SF Pro Display Regular", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: clamp(20px, 3vw, 30px);
-    line-height: clamp(22px, 4vw, 38px);
-    text-align: justify;
-    opacity: 80%;
+  font-family: "SF Pro Display Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(20px, 3vw, 30px);
+  line-height: clamp(22px, 4vw, 38px);
+  text-align: justify;
+  opacity: 80%;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
+/*================================================
+  End Mission / Vision
+  ================================================*/
 
 /*================================================
-End Mission / Vision
-================================================*/
-
-/*================================================
-Begin Event Landing
-================================================*/
+  Begin Event Landing
+  ================================================*/
 
 .events-container {
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
-    background: linear-gradient(123.9deg, #1C0026 1.16%, #640685 100.3%);
+  background: linear-gradient(123.9deg, #1c0026 1.16%, #640685 100.3%);
 }
 
 .events-container h1 {
-    font-family: "SF Pro Display Heavy", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: clamp(35px, 7vw ,85px);
-    line-height: clamp(40px, 9vw ,100px);
-    display: flex;
-    align-items: center;
+  font-family: "SF Pro Display Heavy", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: clamp(35px, 7vw, 85px);
+  line-height: clamp(40px, 9vw, 100px);
+  display: flex;
+  align-items: center;
 
-    margin: 10vw;
+  margin: 10vw;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .img-container {
-    height: 65vh;
-    width: 43vw;
+  height: 65vh;
+  width: 43vw;
 
-    padding: 0;
+  padding: 0;
 
-    margin: 5vw;
+  margin: 5vw;
 }
 
 .img-container img {
-    height: 65vh;
-    width: 43vw;
+  height: 65vh;
+  width: 43vw;
 
-    object-fit: fill;
+  object-fit: fill;
 }
 
 /*================================================
-End Event Landing
-================================================*/
+  End Event Landing
+  ================================================*/
 
 /*================================================
-Begin Events Description
-================================================*/
+  Begin Events Description
+  ================================================*/
 
 .events {
-    width: 100vw;
+  width: 100vw;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    background: linear-gradient(79.65deg, #1C0026 -27.42%, #640685 114.41%);
+  background: linear-gradient(79.65deg, #1c0026 -27.42%, #640685 114.41%);
 }
 
 .event-box {
-    width: 80vw;
+  width: 80vw;
 
-    margin: 5vh 0 5vh;
+  margin: 5vh 0 5vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .event-box h3 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    margin-bottom: 65px;
+  margin-bottom: 65px;
 }
 
-.event-box h3 span{
-    position: relative;
+.event-box h3 span {
+  position: relative;
 
-    font-family: "SF Pro Display Heavy", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: clamp(35px, 7vw ,58px);
-    line-height: clamp(40px, 9vw ,79px);
+  font-family: "SF Pro Display Heavy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(35px, 7vw, 58px);
+  line-height: clamp(40px, 9vw, 79px);
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .event-box h3 span::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: clamp(38px, 9vw ,62px);;
-    left: 0;
-    height: 50px;
-    z-index: 4;
-    background-image: url("IMG/underline-1.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: clamp(38px, 9vw, 62px);
+  left: 0;
+  height: 50px;
+  z-index: 4;
+  background-image: url("IMG/underline-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .event-box p {
-    margin: 0 0 30px;
+  margin: 0 0 30px;
 
-    font-family: "SF Pro Display Regular", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: clamp(20px, 3vw, 34px);
-    line-height: clamp(22px, 4vw, 41px);
-    text-align: justify;
-    opacity: 80%;
+  font-family: "SF Pro Display Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(20px, 3vw, 34px);
+  line-height: clamp(22px, 4vw, 41px);
+  text-align: justify;
+  opacity: 80%;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*================================================
-End Events Description
-================================================*/
-
+  End Events Description
+  ================================================*/
 
 /*================================================
-Begin Teams Cards
-================================================*/
+  Begin Teams Cards
+  ================================================*/
 
 .teams {
-    width: 100vw;
+  width: 100vw;
 
-    padding: 50px 0 50px;
+  padding: 50px 0 50px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    background: linear-gradient(79.65deg, #1C0026 -27.42%, #640685 114.41%);
+  background: linear-gradient(79.65deg, #1c0026 -27.42%, #640685 114.41%);
 }
 
-.full-width {
+/* .full-width {
     width: 100vw;
-
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  } */
+.full-width {
+  /* width: 100vw; */
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 80px;
+  column-gap: 80px;
+}
+
+@media only screen and (max-width: 950px) {
+  .full-width {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card {
-    width: 285px;
-    height: 250px;
+  width: 285px;
+  height: 250px;
 
-    margin: 25px 50px 25px;
+  margin: 25px 50px 25px;
 
-    text-align: center;
+  text-align: center;
 }
 
 .card-blue {
-    background-image: url("IMG/Card-1.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("IMG/Card-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card-red {
-    background-image: url("IMG/Card-2.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("IMG/Card-2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card h5 {
-    position: relative;
-    top: 25px;
+  position: relative;
+  top: 25px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    font-family: "SF Pro Display SemiBold", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
+  font-family: "SF Pro Display SemiBold", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .card p {
-    position: relative;
-    width: 100%;
-    top: 40px;
+  position: relative;
+  width: 100%;
+  top: 40px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    font-family: "SF Pro Display Regular", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
+  font-family: "SF Pro Display Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .card-icon {
-    position: relative;
-    width: 100%;
-    top: 120px;
+  position: relative;
+  width: 100%;
+  top: 120px;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .card-icon a {
-    color: #FFFFFF;
-    font-size: 30px;
+  color: #ffffff;
+  font-size: 30px;
 }
 /*================================================
-End Teams Cards
-================================================*/
+  End Teams Cards
+  ================================================*/
 
-@media only screen and (max-width: 600px){
-    .landing {
-        background-image: url("IMG/BG-long.png");
-    }
-    .col-50-landing {
-        justify-content: flex-start;
-    }
+@media only screen and (max-width: 600px) {
+  .landing {
+    background-image: url("IMG/BG-long.png");
+  }
+  .col-50-landing {
+    justify-content: flex-start;
+  }
 
-    .landing-heading {
-        margin: 20vh 10px 2vh;
-    }
-    .landing-subheading {
-        margin-left: 10px;
-    }
-    .logo-container p {
-        width: 70vw;
-    }
-    .contain-row {
-        flex-direction: column;
-    }
-    .col-50 {
-        width: 100vw;
-        height: 70vh;
-    }
-    .intro-heading {
-        width: 90vw;
-    }
-    .intro-subheading {
-        width: 90vw;
-    }
-    .intro-img {
-        width: 85vw;
-        height: 70vh;
-
-        background-size: cover;
-        border: none;
-
-        margin-left: 5vw;
-        margin-bottom: 10vh;
-    }
-
-    .why-bmc {
-        height: 75vh;
-    }
-
-    .full-image {
-        background-image: url("IMG/Snapseed-long.jpeg");
-        background-size: contain;
-        background-color: #000;
-    }
-
-    .contain-events {
-        height: 220vh;
-    }
-    .event {
-        height: 210vh;
-        flex-direction: column;
-    }
-    .col-50-events {
-        width: 100vw;
-    }
-    .events-img {
-        height: 60vh;
-        width: 90vw;
-        margin-bottom: 0;
-    }
-    .event-item-heading {
-        width: 90%;
-        margin-bottom: 30px;
-    }
-    .event-item-heading span::after {
-        height: 27px;
-    }
-    .event-paragraph {
-        width: 90%;
-        margin: 0 0 32px;
-    }
-
-    .event-cta a span {
-        left: 5%;
-    }
-
-    .meet-container a {
-        margin: 30px 0 20px;
-    }
-    .icon-box {
-        width: 60vw;
-    }
-    .footer p {
-        width: 90vw;
-        margin: 10px 0 0;
-    }
-    .who-are-we-container {
-        height: 110vh;
-    }
-    .who-are-we {
-        height: 110vh;
-        justify-content: flex-start;
-    }
-
-    .mission-vision-container {
-        height: 110vh;
-        justify-content: space-evenly;
-    }
-
-    .who-are-we h3 {
-        margin: 60px 0 35px;
-    }
-
-    .mission-vision {
-        height: 50vh;
-    }
-
-    .events-container {
-        height: 110vh;
-
-        flex-direction: column;
-    }
-    .img-container {
-        width: 100vw;
-        height: 60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        margin-bottom: 40px;
-    }
-
-    .img-container img {
-        height: 60vh;
-        width: 95vw;
-    }
-
-    .col-mobile {
-        height: 50vh;
-        justify-content: flex-end;
-    }
-    .event-box {
-        width: 95vw;
-        margin: 20px 0 20px;
-    }
-    .event-box h3 {
-        margin-bottom: 20px;
-    }
-    .event-box p {
-        margin: 10px 0 0;
-    }
-    .card-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .meet-container h3 {
-        text-align: center;
-    }
-    .why-bmc p {
-        text-align: justify-all;
-    }
-    .who-are-we p {
-        text-align: left;
-    }
-    .mission-vision p {
-        text-align: left;
-    }
-    .event-box {
-        padding-left: 10px;
-    }
-    .event-box p {
-        text-align: left;
-    }
-    .heading-2 {
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-    .heading-c {
-        margin-left: 30px;
-    }
-}
-
-.loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-
+  .landing-heading {
+    margin: 20vh 10px 2vh;
+  }
+  .landing-subheading {
+    margin-left: 10px;
+  }
+  .logo-container p {
+    width: 70vw;
+  }
+  .contain-row {
+    flex-direction: column;
+  }
+  .col-50 {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
+  }
+  .intro-heading {
+    width: 90vw;
+  }
+  .intro-subheading {
+    width: 90vw;
+  }
+  .intro-img {
+    width: 85vw;
+    height: 70vh;
 
-    background-color: #FFFFFF;
+    background-size: cover;
+    border: none;
 
+    margin-left: 5vw;
+    margin-bottom: 10vh;
+  }
+
+  .why-bmc {
+    height: 75vh;
+  }
+
+  .full-image {
+    background-image: url("IMG/Snapseed-long.jpeg");
+    background-size: contain;
+    background-color: #000;
+  }
+
+  .contain-events {
+    height: 220vh;
+  }
+  .event {
+    height: 210vh;
+    flex-direction: column;
+  }
+  .col-50-events {
+    width: 100vw;
+  }
+  .events-img {
+    height: 60vh;
+    width: 90vw;
+    margin-bottom: 0;
+  }
+  .event-item-heading {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .event-item-heading span::after {
+    height: 27px;
+  }
+  .event-paragraph {
+    width: 90%;
+    margin: 0 0 32px;
+  }
+
+  .event-cta a span {
+    left: 5%;
+  }
+
+  .meet-container a {
+    margin: 30px 0 20px;
+  }
+  .icon-box {
+    width: 60vw;
+  }
+  .footer p {
+    width: 90vw;
+    margin: 10px 0 0;
+  }
+  .who-are-we-container {
+    height: 110vh;
+  }
+  .who-are-we {
+    height: 110vh;
+    justify-content: flex-start;
+  }
+
+  .mission-vision-container {
+    height: 110vh;
+    justify-content: space-evenly;
+  }
+
+  .who-are-we h3 {
+    margin: 60px 0 35px;
+  }
+
+  .mission-vision {
+    height: 50vh;
+  }
+
+  .events-container {
+    height: 110vh;
+
+    flex-direction: column;
+  }
+  .img-container {
+    width: 100vw;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    z-index: 7;
+    margin-bottom: 40px;
+  }
+
+  .img-container img {
+    height: 60vh;
+    width: 95vw;
+  }
+
+  .col-mobile {
+    height: 50vh;
+    justify-content: flex-end;
+  }
+  .event-box {
+    width: 95vw;
+    margin: 20px 0 20px;
+  }
+  .event-box h3 {
+    margin-bottom: 20px;
+  }
+  .event-box p {
+    margin: 10px 0 0;
+  }
+  .card-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .meet-container h3 {
+    text-align: center;
+  }
+  .why-bmc p {
+    text-align: justify-all;
+  }
+  .who-are-we p {
+    text-align: left;
+  }
+  .mission-vision p {
+    text-align: left;
+  }
+  .event-box {
+    padding-left: 10px;
+  }
+  .event-box p {
+    text-align: left;
+  }
+  .heading-2 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .heading-c {
+    margin-left: 30px;
+  }
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 7;
+}
+
+/*================================================
+  New Teams Cards
+  ================================================*/
+.member-card {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.25));
+}
+
+.mem.member-card-image,
+.member-card-image > img {
+  /* width: 195px; */
+  height: 223px;
+  border-radius: 22px 0px 0px 22px;
+}
+
+.member-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 52px 25px; */
+  width: 180px;
+  padding: 0 25px;
+  gap: 50px;
+  height: 223px;
+  background: #ffffff;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.member-card-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.member-card-name h2,
+h3 {
+  text-align: center;
+}
+
+.member-card-links {
+  display: flex;
+  gap: 20px;
+}
+
+.member-image {
+  height: 324px;
+}
+
+@media only screen and (max-width: 500px) {
+  .mem.member-card-image,
+  .member-card-image > img {
+    height: 180px;
+  }
+
+  .member-card-info {
+    padding: 0 15px;
+    gap: 40px;
+    height: 180px;
+  }
 }
